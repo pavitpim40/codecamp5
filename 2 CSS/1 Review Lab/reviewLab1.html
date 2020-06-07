@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Lab1:Review CSS</h1>
+    <p>CodeCamp#5 CSS_Clip1 <br>
+       ผู้สอน : พรอำนาจ วนาศรีสันต์ <br>
+        นักเรียน : นาย ภาวิต พิมชนะกุล (Online) </br>
+        pavitpim@gmail.com 
+        </p>
+    <table>
+        <tr>
+            <th>Question</th>
+            <th>Answer</th>
+        </tr>
+        <tr>
+            <td>1.CSS syntax ประกอบด้วยอะไรบ้าง</td>
+            <td><b> Syntax ประกอบไปด้วย 2 ส่วน คือ</b> <br>
+                 1.Seclector : สำหรับประกาศว่าต้องการให้ CSS rule ที่กำลังจะเขียนขึ้น ถูกนำไปใช้ที่ element ใด และ/หรือ สถานะใด <br>
+                 2.Declaration : เป็นส่วนที่ใช้สำหรับเขียนรายละเอียดและกฏต่างๆที่จะใช้ในการตกแต่ง ประกอบด้วย <br> 
+                    2.1 Property : คุณสมบัติทีต้องการตกแต่ง เช่น background-color , text-align เป็นต้น <br>
+                    2.2 Value : เป็นค่าที่เรากำหนดสำหรับการตกแต่ง เช่น สำหรับ font-size จะมี value เป็น 30px หรือ 3rem เป็นต้น ขึ้นอยู่กับ Property ที่เราใช้</td>
+        </tr>
+        <tr>
+            <td>2.การเขียน CSS มีกี่แบบ อะไรบ้าง</td>
+            <td> <b>มีทั้งหมด 3 แบบ</b> <br>
+            1.Inline CSS : ตกแต่งโดยการเขียน CSS rule ลงใน element ของ HTML โดยตรง (มี Specificity สูงสุด) <br>
+            2.Internal CSS : ตกแต่งโดยการเขียน CSS rule ไว้ที่ส่วน head ของเอกสาร HTML ภายใต้ tag style <br>
+            3.External CSS : ตกแต่งโดยการเขียน CSS rule ไว้ที่อีกไฟล์หนึ่งซึ่งเป็นไฟล์สกุล .CSS และใช้การลิงค์มายังเอกสาร HTML ที่ต้องการ </td>
+        </tr>
+        <tr>
+            <td>3.Seclector มีกี่แบบ อะไรบ้าง</td>
+            <td> <b>มีทั้งหมด 7 ประเภท</b> <br>
+            1.Universal Seclector (*) ใช้ตกแต่งทุก element ใน HTML <br>
+            2.Element Selector (eg. p, nav) ใช้ตกแต่งโดยการเลือกจากประเภทของ element <br>
+            3.Class Selector (.) ใช้ตกแต่งโดยการเลือกจากชื่อของ class<br>
+            4.Id Seclector (#) ใช้ตกแต่งโดยการเลือกจากชื่อของ id<br>
+            5.Psuedo-class Selector (eg. div:hover) ใช้ตกแต่งโดยการเลือกจากสถานะของ element<br>
+            6.Psuedo-Element Selector (eg. p::after) ใช้ตกแต่งเฉพาะบางส่วนของ element<br>
+            7.Attribute Selector : ใช้ตกแต่งโดยเลือกจาก Attribute หรือ value<br><br>
+            <b>หากแบ่งตามลักษณะการประกาศ มีทั้งหมด 3ประเภท</b> <br>
+            1.Simple Selector : ใช้ Seclector อย่างใดอย่างหนึ่งจาก 7 ประเภทก่อนหน้านี้ <br>
+            2.Combinator Selector (eg. div p) ใช้ตกแต่งโดยการเลือกจากสิ่งที่ประกาศ โดยพิจารณาความสัมพันธ์ของสิ่งที่ประกาศร่วมด้วย ทำให้ตกแต่งได้specific มากขึ้น<br>
+            3.Grouping Selector (,) ใช้ตกแต่งหลายๆ selector พร้อมๆกัน </td>
+
+        </tr>
+        <tr>
+            <td>4.Combinator มีกี่แบบ อะไรบ้าง</td>
+            <td><b> มีทั้งหมด 4 แบบ</b> <br>
+            1.Descendant : การตกแต่งจะส่งผลต่อ selector ตัวหลังที่ระดับต่ำกว่า ลงไปทุกลำดับขั้น <br>
+            2.Child : การตกแต่งจะส่งผลต่อ selector ตัวหลังที่ระดับต่ำกว่า ลงไปเพียงลำดับขั้นเดียว <br>
+            3.Adjacent Sibling : การตกแต่งจะส่งผลต่อ selector ตัวหลัง ที่อยู่ระดับเดียวกันถัดไปเพียงตัวเดียว  <br>
+            4.General Sibling : การตกแต่งจะส่งผลต่อ selector ตัวหลัง ที่อยู่ระดับเดียวกันถัดไปทุกตัว </td>
+        </tr>
+
+    </table>
+    <hr>
+    <h2>1.CSS Syntax Example</h2> 
+    <p><a href="img/syntax.JPG" target="_blank">Click here</a></p>
+    <h2>2.CSS Writing Example</h2>
+    <p> 1.Inline CSS<a href="img/inlineCSS.JPG" target="_blank">Click here</a> <br>
+        2.Internal CSS <a href="img/internalCSS.JPG" target="_blank">Click here</a> <br>
+        3.External CSS <a href="img/externalCSS.JPG" target="_blank">Click here</a>
+    </p>
+    <h2>3.Selector Example</h2>
+
+    <p> <b>แบ่งตามประเภทของ Selector</b> <br>
+        1.Universal Seclector <a href="img/universalSelector.JPG" target="_blank">Click here</a>  <br>
+        2.Element Selector <a href="img/elementSelector.JPG" target="_blank">Click here</a> <br>
+        3.Class Selector <a href="img/classSelector.JPG" target="_blank">Click here</a><br>
+        4.Id Seclector <a href="img/idSelector.JPG" target="_blank">Click here</a> <br>
+        5.Psuedo-class Selector  <a href="img/PsuedoclassSelector.JPG" target="_blank">Click here</a><br>
+        6.Psuedo-Element Selector <a href="img/PsuedoElementSelector.JPG" target="_blank">Click here</a> <br>
+        7.Attribute Selector  <a href="img/attributeSelector.JPG" target="_blank">Click here</a><br> <br>
+        <b>แบ่งตามลักษณะการประกาศใช้งาน </b> <br>
+        1.Simple Selector <a href="img/simpleSelector.JPG" target="_blank">Click here</a> <br>
+        2.Combinator Selector <a href="img/combinatorSelector.JPG" target="_blank">Click here</a> <br>
+        3.Grouping Selector <a href="img/groupSelector.JPG" target="_blank">Click here</a>
+
+    </p>
+    <h2>4.Combinator Example</h2>
+    <p>
+        1.Descendant <a href="img/comDes.JPG" target="_blank">Click here</a> <br>
+        2.Child  <a href="img/comChild.JPG" target="_blank">Click here</a><br>
+        3.Adjacent Sibling <a href="img/comAdjSibling.JPG" target="_blank">Click here</a>  <br>
+        4.General Sibling <a href="img/comGenSibling.JPG" target="_blank">Click here</a>
+    </p>
+</body>
+</html>

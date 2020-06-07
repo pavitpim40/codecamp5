@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>lab3_สร้างform</title>
+    <style>
+        td,
+        th {
+            border: 0.5px black solid;
+            padding: 4px 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <table style="width:30%; border: 1px black solid;">
+            <tr>
+                <th colspan="2">Pizza Shop 2.0</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Pizza Topping</td>
+                <td>
+                    <input type="radio" name="Topping" value="supreme">Supreme <br>
+                    <input type="radio" name="Topping" value="vegetarian">Vegetarian <br>
+                    <input type="radio" name="Topping" value="Hawaiian">Hawaiian
+                </td>
+            </tr>
+            <tr>
+                <td>Pizza Sauce</td>
+                <td> <select name="sauce">
+                        <option value="tomato">Tomato</option>
+                        <option value="chilli">Chilli</option>
+                        <option value="both">Both</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td>Optional Extras</td>
+                <td>
+                    <input type="checkbox" name="Extra" value="Extra Cheese">Extra Cheese
+                    <input type="checkbox" name="Extra" value="Gleten Free Base">Gluten Free Base
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Delivery Instructions:<br>
+                    <textarea rows="4" cols="60" name="Instructions"></textarea>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="submit" value="Send my Order"></td>
+
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>

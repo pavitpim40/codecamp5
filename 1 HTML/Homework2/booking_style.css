@@ -1,0 +1,38 @@
+td {
+    /* border: 1px black solid; */
+    margin: 0px;
+}
+
+table {
+    border: 1px black solid;
+    border-spacing: 10px;
+}
+
+
+/* ####### ทำให้ก่อนเลือกเป็นสีเทา เลือกแล้วเป็นสีดำ ###### */
+
+select {
+    color:black;
+   
+  }
+
+
+
+  option:first-of-type {
+  color: gray;
+  }
+
+  option:not(:first-of-type){
+    font-weight: bold;
+  }
+
+  /* เหลือทำให้เลือกแล้วเป็นสีดำ */
+/* ############# ปุ่มสีส้ม ################ */
+.SEARCH {
+    color: white;
+    width: 80px;
+    height: 30px;
+    background-color: #eb863f;
+    font-weight: bold;
+    border-radius: 4px;
+}

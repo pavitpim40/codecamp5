@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    
+}
+
+nav{
+    border : 1px black solid;
+    height: 30px;    
+    margin: 0px;
+}
+
+nav ul{
+overflow: hidden;
+list-style: none;
+padding: 0px;
+
+
+}
+
+nav ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    border: 1px red solid;
+}
+
+.topnav li.topnav--left{
+    float: left;
+    text-decoration: none;
+}
+
+.topnav li.topnav--right{
+    float: right;
+    text-decoration: none;
+}

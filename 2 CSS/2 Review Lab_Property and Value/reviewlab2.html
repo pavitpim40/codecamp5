@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Lab2 : Review Property and Value</h1>
+    <p>CodeCamp#5 CSS_Clip1 <br>
+        ผู้สอน : พรอำนาจ วนาศรีสันต์ <br>
+        นักเรียน : นาย ภาวิต พิมชนะกุล (Online) </br>
+        pavitpim@gmail.com
+    </p>
+
+</body>
+<table>
+    <tr>
+        <th>Question</th>
+        <th>Answer</th>
+    </tr>
+    <tr>
+        <td>1.Property และ Value คืออะไร แตกต่างกันอย่างไร </td>
+        <td>- Property คือตัวกำหนดคุณสมบัติต่างๆที่เราต้องการปรับแต่งในเอกสาร HTML เช่น border-color,display เป็นต้น
+            <br>
+            - Value คือค่าของแต่ละ property ไม่จำเป็นต้องเป็นตัวเลขอย่างเดียว <br>
+            &nbsp; &nbsp;เช่น display : flex ; (display คือ property , flex คือ value)<br>
+            - จุดแตกต่างคือ ตัวหนึ่งคือคุณสมบัติ ส่วนอีกตัวคือ"ค่า"ของคุณสมบัตินั้นๆ</td>
+    </tr>
+    <tr>
+        <td>2.Property ที่สอนใน Precamp มีกี่กลุ่ม อะไรบ้าง</td>
+        <td><b>มีทั้งหมด 12 กลุ่ม (รวมทั้งจาก HTML และ CSS)</b> <br>
+            1.Background Properties<br>
+            2.Border Properties<br>
+            3.Color Properties<br>
+            4.Dimension Properties เช่น width,height <br>
+            5.Font Properties<br>
+            6.Margin Properties<br>
+            7.Padding Properties<br>
+            8.Table Properties เช่น border-collapse,caption<br>
+            9.Text Properties <br>
+            10.Flexible Box Layout<br>
+            11.Grid Layout <br>
+            12.Visual formatting Properties : property ที่เกี่ยวข้องกับการจัดหน้า เช่น display , z-index , positon</td>
+    </tr>
+    <tr>
+        <td>3.Value unit มีกี่ประเภท อะไรบ้าง</td>
+        <td><b>สามารถแบ่งออกได้ 2 ประเภท</b><br>
+            1.Absolute Length Unit : ความยาวสัมบูรณ์ (ความยาวตามสเกลตามจริง) ได้แก่
+            <ul>
+                <li>cm : centimeters</li>
+                <li>mm millimeters</li>
+                <li>in inches (1in = 96px = 2.54cm)</li>
+                <li>px * pixels (1px = 1/96th of 1in)</li>
+                <li>pt points (1pt = 1/72 of 1in)</li>
+                <li>pc picas (1pc = 12 pt)</li>
+            </ul>
+            2.Relative Length Unit : ความยาวสัมพัทธ์ (กำหนดความยาวโดยมีค่าความยาวอื่นเป็นตัวอ้างอิง) ได้แก่<br>
+            <ul>
+                <li>em : คิดความยาวเป็นจำนวนเท่าของ font-size </li>
+                <li>ex : คิดความยาวเป็นจำนวนเท่าของ font-size โดยวัดระยะตามแนวนอน</li>
+                <li>ch : คิดความยาวเป็นจำนวนเท่าของความกว้างเลข "0"</li>
+                <li>rem : คิดความยาวเป็นจำนวนเท่าของ root font-size (หากไม่มีการกำหนดจะเป็น 16px by defualut)</li>
+                <li>vw : คิดความยาวเป็น 1% ของความกว้าง viewport (ขึ้นอยู่กับอุปกรณ์ที่ user ใช้)</li>
+                <li>vh : คิดความยาวเป็น 1% ของความสูง viewport (ขึ้นอยู่กับอุปกรณ์ที่ user ใช้)</li>
+                <li>vmin : คิดความยาวเป็น 1% จากด้านที่เล็กกว่า</li>
+                <li>vmax : คิดความยาวเป็น 1% จากด้านที่ยาวกว่า</li>
+                <li>% : คิดระยะจาก parent element (เช่น width : 50% คือ 100px หาก parent element กว้าง 200px)</li>
+
+
+            </ul>
+
+            <tr>
+                <td>4. Vulue ที่นิยมใช้ (คำถามเสริม)</td>
+                <td>ฺValue ที่นิยมใช้กันได้แก่ 
+                    <ul>
+                        <li>px </li>
+                        <li>em  </li>
+                        <li>rem (for Responsive website) </li>
+                        <li>vw,vh (for Responsive website) </li>
+                        <li>%</li>
+                    </ul>
+                </td>
+
+            </tr>
+        </td>
+    </tr>
+
+</table>
+
+</html>

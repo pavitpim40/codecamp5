@@ -1,0 +1,19 @@
+body{
+    background-color: #16f19d;
+}
+table,th,td {
+    
+    border : 1px solid white;
+    border-collapse: collapse;
+    padding : 15px;
+    background-color:darkslategray;
+    color : white;
+    font-size: 16px;
+    vertical-align: top;
+   
+   
+}
+
+p{
+    padding-left: 20px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Lab5 : Review Position and Z-index</h1>
+    <p>CodeCamp#5 CSS_Clip1 <br>
+        ผู้สอน : พรอำนาจ วนาศรีสันต์ <br>
+        นักเรียน : นาย ภาวิต พิมชนะกุล (Online) </br>
+        pavitpim@gmail.com
+    </p>
+
+</body>
+<table>
+    <tr>
+        <th>Question</th>
+        <th>Answer</th>
+    </tr>
+
+    <tr>
+        <td>1.Position คืออะไรและมีอะไรบ้าง</td>
+        <td> position คือการกำหนดคุณสมบัติของ element ในด้านของการจัดตำแหน่ง element ประกอบไปด้วย <br>
+            <ul>
+                <li>statics :  ไม่ทำการจัดตำแหน่งใดๆเป็นพิเศษ ตัว element จะไหลตาม normal flow ปกติ</li>
+                <li>realative : สามารถจัดตำแหน่งได้โดยอ้างอิงจากตำแหน่งปกติเดิมของ element</li>
+                <li>fixed : ทำให้ element ถูกยึดตำแหน่งตายตัวบนหน้าจอ</li>
+                <li>absolute : เป็นการจัดตำแหน่งโดยอ้างอิงจากตัว element ที่เหนือกว่า (ancestor) อันที่ใกล้ที่สุดที่มีการใช้คุณสมบัติ position<br>
+                โดยคุณสมบัติของ ancestor นั้นเป็นอะไรก็ได้ที่ไม่ใช่ statics <br>
+                และหากไม่มี ancestor ให้อ้างอิง จะทำการอ้างอิงตำแหน่งจากด้านซ้ายบนของหน้าจอแสดงผลแทน </li>
+                <li>sticky : จะคงคุณสมบัติ relative ไว้จนกว่าจะถึงค่า offset ที่กำหนด จากนั้นจะแสดงผลเป็น fixed</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>2. z-index คืออะไร ใช้อย่างไร ?</td>
+        <td>z-index คือตัวลำดับ layer ของ element <br>
+        ใช้โดยการกำหนดค่าเป็นจำนวนเต็ม เช่น -1,0,1 หากตัวเลขมีค่ามากสุดก็จะอยู่ layer บนสุด (user เห็นแน่นอน)<br>
+        หากตัวเลขน้อยสุดก็จะทำให้ element นั้นอยู่ด้านหลังสุด ซึ่งหากมี element ใดมาบังก็อาจจะทำให้มองไม่เห็นหรือเห็นได้ไม่ครบ </td>
+
+
+    </tr>
+
+</table>
+
+</html>

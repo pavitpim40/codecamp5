@@ -1,0 +1,1 @@
+Test no conflict merge (write in master)

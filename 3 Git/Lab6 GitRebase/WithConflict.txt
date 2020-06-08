@@ -6,3 +6,4 @@ master5
 master1 (add dev1 in dev branch)
 master2 (add dev2 in dev branch)
 after rebase 1
+master2 (add dev2 in dev branch)

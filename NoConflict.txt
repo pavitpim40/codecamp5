@@ -1,0 +1,1 @@
+Test git merge with no conflict (write in master branch)

@@ -1,1 +1,2 @@
-Test git merge with no conflict (write in master branch)  // Add some comment in another branch
+Test git merge with no conflict (write in master branch)  
+// Add some comment in another branch

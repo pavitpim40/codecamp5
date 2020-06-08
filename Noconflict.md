@@ -1,1 +1,1 @@
-Test no conflict merge (write in master)
+Test no conflict merge (write in master) <!-- Add some comment-->

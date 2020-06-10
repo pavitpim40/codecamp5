@@ -1,4 +1,0 @@
-Codecamp Thailand...
-JavaScript & Node.js
-React.js
-HTML + CSS

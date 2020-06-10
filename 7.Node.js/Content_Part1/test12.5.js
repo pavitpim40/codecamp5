@@ -1,5 +1,4 @@
 //แก้ปัญหา Callback Hell ของ Read fileSync 
-const fs = require('fs');
 
 // fs.readFile('start.txt', 'utf-8', (err, data) => {
 //     console.log(data)
@@ -14,7 +13,7 @@ const fs = require('fs');
 //   })
 // })
 
-
+const fs = require('fs');
 function getFile(filename) {
 return new Promise ( (resolve,reject) => {
     fs.readFile(filename , 'utf-8', (err, data) => resolve(data))

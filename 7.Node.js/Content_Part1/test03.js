@@ -1,6 +1,7 @@
+//ใส่่ error
 const fs = require('fs');
 
-fs.readFile('./readm.txt', (err,data) => {
+fs.readFile('./readme.txt', (err,data) => {
     if (err) {
         console.log("Error..."); 
         return;

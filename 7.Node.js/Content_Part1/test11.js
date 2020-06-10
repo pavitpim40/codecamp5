@@ -16,6 +16,9 @@ let pm = new Promise( (resolve,reject) => {
 console.log('1')
 pm.then( () => console.log('3'))
 
+
+
+
 //  ### Code 2 ลองเอา resolve ไว้ที่อื่น 
 // let pm = new Promise( (resolve,reject) => {
 //     console.log('1')
@@ -29,6 +32,10 @@ pm.then( () => console.log('3'))
 
 
 // pm.then( () => console.log('3'))
+
+
+
+
 
 
 

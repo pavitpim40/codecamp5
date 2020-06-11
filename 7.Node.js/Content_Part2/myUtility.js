@@ -1,13 +1,12 @@
 
 var pi = 3.14
-function getRandom(min,max){
-return Math.floor (Math.random() * (max-min)) + min 
-}
+const user = {name : 'John' , age:30}
 
-function circleArea(r) {
+exports.getRd =  (min=0,max=99) => Math.floor (Math.random() * (max-min)) + min 
+module.exports.circleArea = function circleArea(r) {
     return pi * r ** 2
 }
 
 module.exports.pi = 3.14
-module.exports.getRd = getRandom
-module.exports.circleArea = circleArea
+//module.exports.getRd = getRandom
+module.exports.user = user

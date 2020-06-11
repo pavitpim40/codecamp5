@@ -3,14 +3,15 @@
 const fs = require('fs');
 
 function getFile(filename) {
-return new Promise ( (resolve,reject) => {
+return new Promise ( (resolve,reject) => { 
+    if (filename === 'f02.txt') reject('Error from f02.txt')
     fs.readFile(filename , 'utf-8', (err, data) => resolve(data))
 })
 }
 
  
 async function runGetFile(){
-
+try {
     const data = await getFile('./start.txt');
     console.log(data);
 
@@ -22,6 +23,9 @@ async function runGetFile(){
     
     const d3 = await getFile(d2)
     console.log(d3);
+}catch (err) {
+    console.log(err);
+}
 } 
 
 runGetFile()

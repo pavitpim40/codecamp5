@@ -1,3 +1,6 @@
-const rd = require('./myUtility')
 
-console.log(rd.getRandom(0,9));
+const rd = require('./myutility')
+
+console.log(rd.getRd(0,9));
+console.log(rd.pi);
+console.log(rd.circleArea(10));

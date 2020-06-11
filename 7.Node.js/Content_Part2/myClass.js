@@ -1,5 +1,7 @@
+const mu = require('./myUtility')
+
 class Human {
-    constructor( name, age=30) {
+    constructor( name, age = mu.getRd(20,50)) {
         this.name = name
         this.age = age 
     }
@@ -7,3 +9,4 @@ class Human {
 }
 
 exports.Human = Human
+

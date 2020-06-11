@@ -1,8 +1,8 @@
 const mc = require('./mYclAsS')
-const mu = require('./myUtility')
 
 
-const customer = new mc.Human('Andy' , mu.getRd(20,50))
+
+const customer = new mc.Human('Andy')
 customer.info()
 const employee = new mc.Human('Bobby' , 25)
 employee.info()

@@ -1,17 +1,13 @@
-let globalCallbackValue; 
+$.on('button', 'click', function onClick() {
+  setTimeout(function timer() {
+      console.log('You clicked the button!');    
+  }, 2000);
+});
 
+console.log("Hi!");
 
+setTimeout(function timeout() {
+  console.log("Click the button!");
+}, 5000);
 
-function tryHello4() {
-  let returnValue = 'returnValue';
-  let callbackValue = 'callbackValue';
-  
-  function hello4(err, callbackValue) {
-    globalCallbackValue = callbackValue;
-  }
-  hello4(null,callbackValue);
-  return returnValue;
-}
-let x = tryHello4();
-console.log(x);
-console.log(globalCallbackValue);
+console.log("Welcome to loupe.");

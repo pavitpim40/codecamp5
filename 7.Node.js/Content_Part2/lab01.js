@@ -16,4 +16,4 @@ jsonArr.map ( x => {
 let newdata = JSON.stringify(jsonArr)
 //console.log(newdata);
 fs.writeFileSync ('./lab01_output.json',newdata)
-//console.log('Save output.json');
+// console.log('Save output.json');

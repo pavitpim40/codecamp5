@@ -1,0 +1,13 @@
+{
+  "name": "webform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "7http-formpost.js",
+  "scripts": {
+    "start": "node 7http-formpost.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

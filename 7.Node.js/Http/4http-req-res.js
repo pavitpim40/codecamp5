@@ -3,7 +3,7 @@ const http = require('http')
 http.createServer( (req,res) => {
     //ตระกูล writeHead
     res.writeHead(200, {
-        'content-type' : 'text/html'
+        'content-type' : 'text/html; charset=utf8'
     })
     // ตระกูล setHeader ใช้ทีหลัง writeHead ไม่ได้  (precedence ต่ำกว่า)
     // res.statusCode = 200 
@@ -11,17 +11,18 @@ http.createServer( (req,res) => {
 
     if (req.url === '/') {
         res.write('<h2>This is Homepage</h2>')
-        res.write(`<h2>You're welcome</h2>`)
+        for (let i =1 ; i <7 ; i++)
+        res.write(`<h${i}>ยินดีต้อนรับ ครั้งที่ ${i}</h${i}>`)
         return  res.end()
     }
-    
     if (req.url === '/user') {
         res.write('<h2>This is User page</h2>')
         return  res.end()
     }
 
     if (req.url === '/page1') {
-        res.write(`<!DOCTYPE html>
+        res.write(`
+        <!DOCTYPE html>
         <html>
         <body style="background-color:powderblue;">
         
@@ -31,10 +32,10 @@ http.createServer( (req,res) => {
         </body>
         </html>
         `)
-        return  res.end()
+        res.end()
     }
 
-    if (req.url === '/form') {
+    function form(req,res) {
         res.write(`
         <!DOCTYPE html>
         <html>
@@ -56,7 +57,10 @@ http.createServer( (req,res) => {
         </body>
         </html>
         `)
-        return  res.end()
+        res.end()
+    }
+    if (req.url === '/form') {
+       return  form(req,res)
     }
 
 

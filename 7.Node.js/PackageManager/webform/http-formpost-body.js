@@ -15,7 +15,7 @@ http.createServer( (req,res) => {
         }
     console.log(body.fname + ' ' + body.lname)
     res.writeHead(200)
-    res.write(`<p> ชื่อ : ${body.fname} , นามสกุล : ${body.lname}</p><hr>`)
+    res.write(`<p> ชื่อ == : ${body.fname} , นามสกุล == : ${body.lname}</p><hr>`)
     res.end(postHTML)
     })
 

@@ -4,11 +4,13 @@
   "description": "",
   "main": "7http-formpost.js",
   "scripts": {
-    "start": "node 7http-formpost.js",
+    "start": "node http-formpost-body",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "body": "^5.1.0"
+  }
 }

@@ -1,3 +1,4 @@
+// ลองแก้ mac เป็น apple
 const fs = require('fs')
 
 let data = fs.readFileSync('./sample.json' , 'utf-8')

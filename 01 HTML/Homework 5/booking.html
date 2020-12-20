@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet" href="booking_style.css">
+
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td colspan="2">Flying from<br>
+                    <select name="Start" style="width: 140px;">
+                        <option  value="">Select your option</option>
+                        <option  value="Bangkok,Thailand">Bangkok,Thailand</option>
+                        <option value="Chiang Mai,Thailand">Chiang Mai,Thailand</option>
+                        <option value="Phuket, Thailand">Phuket, Thailand</option>
+                        <option  value="Ubon Ratchathani, Thailand">Ubon Ratchathani, Thailand</option>
+                    </select>
+                </td>
+                <td colspan="2">To<br>
+                    <select name="Destination" style="width: 140px;">
+                        <option value="" disabled selected  >Select your option</option>
+                        <option value="Bangkok,Thailand">Bangkok,Thailand</option>
+                        <option value="Chiang Mai,Thailand">Chiang Mai,Thailand</option>
+                        <option value="Phuket, Thailand">Phuket, Thailand</option>
+                        <option value="Ubon Ratchathani, Thailand">Ubon Ratchathani, Thailand</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="width: 140px;">
+                    Departing <br>
+                    <input type="date" value="Departing">
+                </td>
+                <td colspan="2" style="width: 140px;">
+                    Returning <br>
+                    <input type="date" value="Departing">
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    Adult<br>
+                    <input type="number" min="0" step="1" style="width: 70px;" value="1">
+                </td>
+                <td>
+                    Child<br>
+                    <input type="number" min="0" step="1" style="width: 70px;" value="0">
+                </td>
+                <td>
+                    Infant<br>
+                    <input type="number" min="0" step="1" style="width: 70px;" value="0">
+                </td>
+
+                <td style="color: #eb863f;">
+                    Currency<br>
+                    <select name="Currency" style="width: 70px;">
+                        <option value="Bath">Bath</option>
+                        <option value="Yuan">Yuan</option>
+                        <option value="U.S. Dollar">U.S Dollar</option>
+                        <option value="Euro">Euro</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <input type="button" value="SEARCH" class="SEARCH">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+
+</html>
